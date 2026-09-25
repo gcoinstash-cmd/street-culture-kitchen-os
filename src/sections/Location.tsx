@@ -109,7 +109,7 @@ export const Location: React.FC = () => {
                   <p className="text-xs text-brand-text leading-relaxed font-sans font-medium">
                     {LOCATION_DETAILS.address}
                   </p>
-                  <p className="text-[11px] text-brand-orange font-mono font-bold">
+                  <p className="text-xs font-semibold text-brand-orange font-mono font-bold">
                     ★ {LOCATION_DETAILS.subtext}
                   </p>
                 </div>
@@ -183,14 +183,14 @@ export const Location: React.FC = () => {
                           <span className="flex-shrink-0 w-5 h-5 rounded-sm bg-brand-accent/5 border border-brand-accent/15 text-brand-accent text-[9px] font-bold flex items-center justify-center">
                             {idx + 1}
                           </span>
-                          <span className="text-brand-text text-[11px] leading-relaxed text-left">
+                          <span className="text-brand-text text-xs font-semibold leading-relaxed text-left">
                             {step}
                           </span>
                         </div>
                       ))}
                     </div>
 
-                    <div className="p-3 bg-brand-accent/5 border border-brand-accent/10 flex justify-between items-center text-[10px]">
+                    <div className="p-3 bg-brand-accent/5 border border-brand-accent/10 flex justify-between items-center text-xs font-semibold tracking-wider">
                       <span className="text-brand-muted">TOTAL GRID COMPACTION:</span>
                       <span className="text-brand-accent font-black tracking-widest uppercase">7.5 MILES // ENGAGED</span>
                     </div>

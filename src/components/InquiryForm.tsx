@@ -56,7 +56,7 @@ export const InquiryForm: React.FC = () => {
         {/* Status Line */}
         <div className="flex justify-between items-center pb-4 mb-6 border-b border-brand-border">
           <span className="font-mono text-xs text-brand-accent tracking-widest uppercase">SECURE TRANSACT SYSTEM</span>
-          <span className="font-mono text-[10px] text-brand-muted">V1.49 // ONLINE</span>
+          <span className="font-mono text-xs font-semibold tracking-wider text-brand-muted">V1.49 // ONLINE</span>
         </div>
 
         <AnimatePresence mode="wait">
@@ -78,7 +78,7 @@ export const InquiryForm: React.FC = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-mono font-bold tracking-wider uppercase text-brand-muted mb-1.5">
+                  <label className="block text-sm font-mono font-bold tracking-wider uppercase text-brand-muted mb-1.5">
                     Your Name // Crew Lead *
                   </label>
                   <input
@@ -88,12 +88,12 @@ export const InquiryForm: React.FC = () => {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="E.G. ALEX MERCER"
-                    className="w-full bg-brand-card border border-brand-border focus:border-brand-accent focus:shadow-[0_0_10px_rgba(204,255,0,0.1)] text-white placeholder-brand-muted/40 font-mono text-sm px-4 py-3 outline-none transition-all duration-200"
+                    className="w-full bg-brand-card border border-brand-border focus:border-brand-accent focus:shadow-[0_0_10px_rgba(204,255,0,0.1)] text-white placeholder-brand-muted/40 font-mono text-base min-h-[44px] px-4 py-3 outline-none transition-all duration-200"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-mono font-bold tracking-wider uppercase text-brand-muted mb-1.5">
+                  <label className="block text-sm font-mono font-bold tracking-wider uppercase text-brand-muted mb-1.5">
                     Email Address *
                   </label>
                   <input
@@ -103,14 +103,14 @@ export const InquiryForm: React.FC = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="E.G. ALEX@CYBER.NET"
-                    className="w-full bg-brand-card border border-brand-border focus:border-brand-accent focus:shadow-[0_0_10px_rgba(204,255,0,0.1)] text-white placeholder-brand-muted/40 font-mono text-sm px-4 py-3 outline-none transition-all duration-200"
+                    className="w-full bg-brand-card border border-brand-border focus:border-brand-accent focus:shadow-[0_0_10px_rgba(204,255,0,0.1)] text-white placeholder-brand-muted/40 font-mono text-base min-h-[44px] px-4 py-3 outline-none transition-all duration-200"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-mono font-bold tracking-wider uppercase text-brand-muted mb-1.5">
+                  <label className="block text-sm font-mono font-bold tracking-wider uppercase text-brand-muted mb-1.5">
                     Mobile Core / Phone *
                   </label>
                   <input
@@ -120,12 +120,12 @@ export const InquiryForm: React.FC = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="E.G. +1 (555) 0192"
-                    className="w-full bg-brand-card border border-brand-border focus:border-brand-accent focus:shadow-[0_0_10px_rgba(204,255,0,0.1)] text-white placeholder-brand-muted/40 font-mono text-sm px-4 py-3 outline-none transition-all duration-200"
+                    className="w-full bg-brand-card border border-brand-border focus:border-brand-accent focus:shadow-[0_0_10px_rgba(204,255,0,0.1)] text-white placeholder-brand-muted/40 font-mono text-base min-h-[44px] px-4 py-3 outline-none transition-all duration-200"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-mono font-bold tracking-wider uppercase text-brand-muted mb-1.5">
+                  <label className="block text-sm font-mono font-bold tracking-wider uppercase text-brand-muted mb-1.5">
                     Target Date *
                   </label>
                   <input
@@ -134,21 +134,21 @@ export const InquiryForm: React.FC = () => {
                     name="date"
                     value={formData.date}
                     onChange={handleChange}
-                    className="w-full bg-brand-card border border-brand-border focus:border-brand-accent text-white font-mono text-sm px-4 py-3 outline-none transition-all duration-200"
+                    className="w-full bg-brand-card border border-brand-border focus:border-brand-accent text-white font-mono text-base min-h-[44px] px-4 py-3 outline-none transition-all duration-200"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-mono font-bold tracking-wider uppercase text-brand-muted mb-1.5">
+                  <label className="block text-sm font-mono font-bold tracking-wider uppercase text-brand-muted mb-1.5">
                     Aesthetic Package *
                   </label>
                   <select
                     name="packageId"
                     value={formData.packageId}
                     onChange={handleChange}
-                    className="w-full bg-brand-card border border-brand-border focus:border-brand-accent text-white font-mono text-sm px-4 py-3 outline-none transition-all duration-200 appearance-none cursor-pointer"
+                    className="w-full bg-brand-card border border-brand-border focus:border-brand-accent text-white font-mono text-base min-h-[44px] px-4 py-3 outline-none transition-all duration-200 appearance-none cursor-pointer"
                   >
                     {CATERING_PACKAGES.map((pkg) => (
                       <option key={pkg.id} value={pkg.id}>
@@ -159,7 +159,7 @@ export const InquiryForm: React.FC = () => {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-mono font-bold tracking-wider uppercase text-brand-muted mb-1.5">
+                  <label className="block text-sm font-mono font-bold tracking-wider uppercase text-brand-muted mb-1.5">
                     Guest Estimate (MIN 20) *
                   </label>
                   <input
@@ -171,13 +171,13 @@ export const InquiryForm: React.FC = () => {
                     value={formData.guests}
                     onChange={handleChange}
                     placeholder="30"
-                    className="w-full bg-brand-card border border-brand-border focus:border-brand-accent text-white font-mono text-sm px-4 py-3 outline-none transition-all duration-200"
+                    className="w-full bg-brand-card border border-brand-border focus:border-brand-accent text-white font-mono text-base min-h-[44px] px-4 py-3 outline-none transition-all duration-200"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-mono font-bold tracking-wider uppercase text-brand-muted mb-1.5">
+                <label className="block text-sm font-mono font-bold tracking-wider uppercase text-brand-muted mb-1.5">
                   Audio demands, dietary specifications, street art preference
                 </label>
                 <textarea
@@ -186,7 +186,7 @@ export const InquiryForm: React.FC = () => {
                   value={formData.specials}
                   onChange={handleChange}
                   placeholder="Need vegan alternatives, extreme heavy-bass audio setups, specific food timing or customized merchandise packaging..."
-                  className="w-full bg-brand-card border border-brand-border focus:border-brand-accent focus:shadow-[0_0_10px_rgba(204,255,0,0.1)] text-white placeholder-brand-muted/40 font-mono text-sm px-4 py-3 outline-none transition-all duration-200 resize-none"
+                  className="w-full bg-brand-card border border-brand-border focus:border-brand-accent focus:shadow-[0_0_10px_rgba(204,255,0,0.1)] text-white placeholder-brand-muted/40 font-mono text-base min-h-[44px] px-4 py-3 outline-none transition-all duration-200 resize-none"
                 />
               </div>
 

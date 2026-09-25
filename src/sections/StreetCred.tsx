@@ -62,7 +62,7 @@ export const StreetCred: React.FC = () => {
               RAW INTEL // VERIFIED CLOUT
             </h2>
           </div>
-          <p className="max-w-md text-xs sm:text-sm text-brand-muted font-sans leading-relaxed text-left md:text-right">
+          <p className="max-w-md text-base font-semibold text-brand-muted font-sans leading-relaxed text-left md:text-right">
             Collected transcripts from physical dispatch logs. Real people, pristine culinary expectations, heavy low frequencies.
           </p>
         </div>
@@ -118,7 +118,7 @@ export const StreetCred: React.FC = () => {
                 </div>
 
                 {/* Quote Block */}
-                <p className="text-xs sm:text-sm text-brand-text leading-relaxed font-sans text-left relative pl-4 border-l-2 border-brand-orange/40 italic">
+                <p className="text-base font-semibold text-brand-text leading-relaxed font-sans text-left relative pl-4 border-l-2 border-brand-orange/40 italic">
                   "{review.quote}"
                 </p>
 

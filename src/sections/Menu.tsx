@@ -181,7 +181,7 @@ export const Menu: React.FC = () => {
               <Sparkles className="w-4 h-4 text-brand-accent animate-spin [animation-duration:6s]" /> THE FLAVOR INDEX // 100% CULT
             </span>
             <h2 className="font-display text-4xl sm:text-5xl font-black text-white uppercase tracking-tight">
-              THE FLAVOR GRID <span className="text-brand-muted/70 font-sans normal-case font-normal text-xs sm:text-sm tracking-normal">(Our Menu)</span>
+              THE FLAVOR GRID <span className="text-brand-muted/70 font-sans normal-case font-normal text-base font-semibold tracking-normal">(Our Menu)</span>
             </h2>
           </div>
           
@@ -229,7 +229,7 @@ export const Menu: React.FC = () => {
                   : "bg-brand-card border-brand-border text-brand-muted hover:border-brand-text/40 hover:text-white"
               }`}
             >
-              <span className="uppercase text-[11px] font-black tracking-widest flex items-center gap-2">
+              <span className="uppercase text-xs font-semibold font-black tracking-widest flex items-center gap-2">
                 DIETARY MATRIX // VEGAN & GF
                 <span className="relative flex h-2 w-2">
                   {dietaryOnly ? (
@@ -352,7 +352,7 @@ export const Menu: React.FC = () => {
                       variant="secondary"
                       size="sm"
                       onClick={() => handleOpenItem(item)}
-                      className="flex-1 py-2.5 h-10 gap-1.5 text-[10px]"
+                      className="flex-1 py-2.5 h-10 gap-1.5 text-xs font-semibold tracking-wider"
                     >
                       <Info className="w-3.5 h-3.5" /> DETAIL RAW
                     </Button>
@@ -365,7 +365,7 @@ export const Menu: React.FC = () => {
                         handleAddToOrder(item.name);
                         setIsPlatterOpen(true);
                       }}
-                      className="flex-1 py-2.5 h-10 gap-1 text-[10px] bg-brand-accent border-brand-accent hover:bg-[#8E8E93]"
+                      className="flex-1 py-2.5 h-10 gap-1 text-xs font-semibold tracking-wider bg-brand-accent border-brand-accent hover:bg-[#8E8E93]"
                     >
                       <Plus className="w-3.5 h-3.5 text-black" /> SECURE BITE
                     </Button>
@@ -380,7 +380,7 @@ export const Menu: React.FC = () => {
         {/* Brand Prominent "Order Online" POS Platform Bridge Bottom Panel */}
         <div className="pt-8 border-t border-brand-border flex flex-col items-center text-center space-y-6">
           <div className="max-w-xl space-y-2">
-            <span className="font-mono text-[10px] text-brand-orange tracking-widest uppercase font-bold block">
+            <span className="font-mono text-xs font-semibold tracking-wider text-brand-orange tracking-widest uppercase font-bold block">
               // POS INTEROPERABILITY BRIDGE <span className="text-brand-muted/80 font-sans normal-case font-normal text-[9px] tracking-normal">(Online Ordering)</span>
             </span>
             <h3 className="font-display text-2xl font-black text-white uppercase tracking-tight">
@@ -462,7 +462,7 @@ export const Menu: React.FC = () => {
                     <span className="block font-mono text-[9px] text-brand-orange uppercase font-bold tracking-widest text-left">
                       // MACRO/CALORIC TELEMETRY
                     </span>
-                    <div className="grid grid-cols-2 gap-2 font-mono text-[11px]">
+                    <div className="grid grid-cols-2 gap-2 font-mono text-xs font-semibold">
                       <div className="flex justify-between py-1 border-b border-brand-border/40 text-left">
                         <span className="text-brand-muted">Calories:</span>
                         <span className="text-white font-bold">{itemSpecs.calories}</span>
@@ -486,7 +486,7 @@ export const Menu: React.FC = () => {
                 {/* Modal Right Column: Description, Ingredients spec breakdown, Interactive Add-Ons list, Real-time calculator */}
                 <div className="md:col-span-7 space-y-6 text-left">
                   <div className="space-y-1">
-                    <span className="inline-block font-mono text-[10px] text-brand-orange tracking-widest uppercase font-bold">
+                    <span className="inline-block font-mono text-xs font-semibold tracking-wider text-brand-orange tracking-widest uppercase font-bold">
                       // CATEGORY: {selectedItem.category.toUpperCase().replace("-", " ")}
                     </span>
                     <h3 className="font-display text-2xl sm:text-3xl font-black text-white uppercase leading-none tracking-tight">
@@ -494,7 +494,7 @@ export const Menu: React.FC = () => {
                     </h3>
                   </div>
 
-                  <p className="text-xs sm:text-sm text-brand-text/90 font-sans leading-relaxed">
+                  <p className="text-base font-semibold text-brand-text/90 font-sans leading-relaxed">
                     {selectedItem.description}
                   </p>
 
@@ -554,11 +554,11 @@ export const Menu: React.FC = () => {
                   {/* Real-time Dynamic Sum Counter and actions */}
                   <div className="pt-4 border-t border-brand-border/60 space-y-4">
                     <div className="flex items-center justify-between">
-                      <span className="font-mono text-[10px] text-brand-muted uppercase font-bold">TOTAL PRICE FORMULA:</span>
+                      <span className="font-mono text-xs font-semibold tracking-wider text-brand-muted uppercase font-bold">TOTAL PRICE FORMULA:</span>
                       
                       <div className="flex items-center gap-2">
                         {selectedAddOns.length > 0 && (
-                          <span className="text-[10px] font-mono text-brand-muted tracking-tight">
+                          <span className="text-xs font-semibold tracking-wider font-mono text-brand-muted tracking-tight">
                             (${selectedItem.price.toFixed(2)} BASE + ${currentAddOnsTotal.toFixed(2)} ADDONS) = 
                           </span>
                         )}
@@ -622,7 +622,7 @@ export const Menu: React.FC = () => {
                 
                 {/* Header info */}
                 <div className="flex justify-between items-center pb-3 border-b border-brand-border">
-                  <span className="font-mono text-xs text-brand-accent tracking-widest uppercase font-bold">POS TRANSFER CORE <span className="text-brand-muted/70 font-sans normal-case font-normal text-[10px] tracking-normal">(Online Checkout)</span></span>
+                  <span className="font-mono text-xs text-brand-accent tracking-widest uppercase font-bold">POS TRANSFER CORE <span className="text-brand-muted/70 font-sans normal-case font-normal text-xs font-semibold tracking-wider tracking-normal">(Online Checkout)</span></span>
                   <button 
                     onClick={() => setShowPOSBridge(false)}
                     className="text-brand-muted hover:text-white cursor-pointer select-none"
@@ -649,7 +649,7 @@ export const Menu: React.FC = () => {
                   >
                     <div className="space-y-1">
                       <span className="block font-display text-sm font-black text-white uppercase">ROUTE 01 // TOAST PLATFORM</span>
-                      <span className="block text-[10px] font-mono text-brand-muted">Recommended for direct pickup counters</span>
+                      <span className="block text-xs font-semibold tracking-wider font-mono text-brand-muted">Recommended for direct pickup counters</span>
                     </div>
                     <ExternalLink className="w-4 h-4 text-brand-accent" />
                   </button>
@@ -660,7 +660,7 @@ export const Menu: React.FC = () => {
                   >
                     <div className="space-y-1">
                       <span className="block font-display text-sm font-black text-white uppercase">ROUTE 02 // SQUARE ONLINE</span>
-                      <span className="block text-[10px] font-mono text-brand-muted">Optimal for secure digital wallets & cards</span>
+                      <span className="block text-xs font-semibold tracking-wider font-mono text-brand-muted">Optimal for secure digital wallets & cards</span>
                     </div>
                     <ExternalLink className="w-4 h-4 text-brand-accent" />
                   </button>
@@ -671,13 +671,13 @@ export const Menu: React.FC = () => {
                   >
                     <div className="space-y-1">
                       <span className="block font-display text-sm font-black text-white uppercase">ROUTE 03 // DOORDASH MARKET</span>
-                      <span className="block text-[10px] font-mono text-brand-muted">For immediate courier drops</span>
+                      <span className="block text-xs font-semibold tracking-wider font-mono text-brand-muted">For immediate courier drops</span>
                     </div>
                     <ExternalLink className="w-4 h-4 text-brand-accent" />
                   </button>
                 </div>
 
-                <div className="p-3 bg-brand-accent/5 border border-brand-accent/10 flex items-center gap-2 text-[10px] font-mono text-brand-muted">
+                <div className="p-3 bg-brand-accent/5 border border-brand-accent/10 flex items-center gap-2 text-xs font-semibold tracking-wider font-mono text-brand-muted">
                   <ShieldCheck className="w-4 h-4 text-brand-accent flex-shrink-0" />
                   <span>Verified 256-bit secure checkout handshake protocols</span>
                 </div>

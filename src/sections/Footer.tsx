@@ -53,7 +53,7 @@ export const Footer: React.FC = () => {
               <span className="block text-md font-black text-white tracking-widest uppercase">
                 STREET CULTURE KITCHEN
               </span>
-              <span className="block text-[10px] text-brand-muted tracking-wide">
+              <span className="block text-xs font-semibold tracking-wider text-brand-muted tracking-wide">
                 // RAW FOODS. AUDIO DRIVEN.
               </span>
             </div>
@@ -146,7 +146,7 @@ export const Footer: React.FC = () => {
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="bg-brand-accent text-black font-black text-xs tracking-widest px-5 py-3 border border-brand-accent hover:opacity-90 transition-opacity duration-200 cursor-pointer select-none flex items-center justify-center gap-1.5"
+                  className="bg-brand-accent text-black font-black text-base font-semibold min-h-[44px] tracking-widest px-5 py-3 border border-brand-accent hover:opacity-90 transition-opacity duration-200 cursor-pointer select-none flex items-center justify-center gap-1.5"
                 >
                   {submitting ? "ENCRYPT..." : <><span className="sr-only">Submit</span><Send className="w-3.5 h-3.5" /></>}
                 </button>
@@ -157,7 +157,7 @@ export const Footer: React.FC = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0 }}
-                className="p-3 bg-brand-accent/5 border border-brand-accent/20 text-brand-accent font-mono text-[10px] tracking-wider uppercase flex items-center gap-2.5 rounded-sm"
+                className="p-3 bg-brand-accent/5 border border-brand-accent/20 text-brand-accent font-mono text-xs font-semibold tracking-wider tracking-wider uppercase flex items-center gap-2.5 rounded-sm"
               >
                 <div className="w-5 h-5 rounded-full bg-brand-accent/10 border border-brand-accent/25 flex items-center justify-center">
                   <Check className="w-3 h-3" />

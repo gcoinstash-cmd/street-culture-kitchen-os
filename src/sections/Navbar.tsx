@@ -88,7 +88,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin }) => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-orange opacity-75"></span>
             <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-brand-orange"></span>
           </span>
-          <span className="font-mono text-[9px] sm:text-[10px] font-black tracking-widest text-[#E4E4E7] uppercase flex items-center gap-2">
+          <span className="font-mono text-[9px] sm:text-xs font-semibold tracking-wider font-black tracking-widest text-[#E4E4E7] uppercase flex items-center gap-2">
             NEXT COVER SQUAD DEPLOYMENT:{" "}
             <span className="text-brand-orange focus-ring transition-colors duration-200">
               {countdownText}
@@ -170,7 +170,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin }) => {
             {onOpenAdmin && (
               <button
                 onClick={onOpenAdmin}
-                className="text-[10px] font-mono tracking-widest text-brand-accent/80 hover:text-brand-accent border border-brand-accent/40 hover:border-brand-accent px-2.5 py-1.5 rounded transition-all cursor-pointer"
+                className="text-base font-semibold min-h-[44px] font-semibold tracking-wider font-mono tracking-widest text-brand-accent/80 hover:text-brand-accent border border-brand-accent/40 hover:border-brand-accent px-2.5 py-1.5 rounded transition-all cursor-pointer"
                 title="Bypass Passkey: street2026"
               >
                 [ SCK PASS ]
@@ -239,7 +239,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAdmin }) => {
             className="fixed inset-0 top-[92px] z-40 bg-[#0B0B0C]/98 backdrop-blur-xl border-t border-brand-border md:hidden flex flex-col justify-between py-12 px-8 font-mono"
           >
             <div className="space-y-8 flex flex-col">
-              <span className="text-[10px] text-brand-muted tracking-widest">// NAVIGATION CORE</span>
+              <span className="text-xs font-semibold tracking-wider text-brand-muted tracking-widest">// NAVIGATION CORE</span>
               
               {navLinks.map((link, idx) => (
                 <motion.button

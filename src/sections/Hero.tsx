@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-accent opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-accent"></span>
             </span>
-            <span className="font-mono text-[10px] sm:text-xs font-bold tracking-widest text-brand-text uppercase flex items-center gap-1">
+            <span className="font-mono text-xs font-semibold tracking-wider sm:text-xs font-bold tracking-widest text-brand-text uppercase flex items-center gap-1">
               <Flame className="w-3.5 h-3.5 text-brand-orange animate-pulse" /> STREET CULINARY ENGINE ACTIVE
             </span>
           </div>
@@ -65,7 +65,7 @@ export const Hero: React.FC = () => {
               </span>
             </h1>
             
-            <p className="max-w-xl text-brand-muted font-sans text-xs sm:text-base leading-relaxed">
+            <p className="max-w-xl text-brand-muted font-sans text-base leading-relaxed">
               We smash aged brisket, hand-press charcoal tortillas, and curate heavy sub-bass beats on the concrete. No rules, no compromise — visual street culture meets elite culinary art.
             </p>
           </div>
@@ -76,7 +76,7 @@ export const Hero: React.FC = () => {
               variant="primary" 
               size="lg" 
               onClick={() => handleScrollTo("menu")}
-              className="text-xs sm:text-sm h-12 sm:h-14 tracking-widest px-8 w-full sm:w-auto"
+              className="text-base font-semibold h-12 sm:h-14 tracking-widest px-8 w-full sm:w-auto"
             >
               VIEW TODAY'S MENU
             </Button>
@@ -84,7 +84,7 @@ export const Hero: React.FC = () => {
               variant="outline" 
               size="lg" 
               onClick={() => handleScrollTo("catering")}
-              className="text-xs sm:text-sm h-12 sm:h-14 tracking-widest px-8 w-full sm:w-auto border-brand-orange/60 text-brand-orange hover:text-brand-orange hover:border-brand-orange hover:shadow-[0_0_15px_rgba(255,69,0,0.15)]"
+              className="text-base font-semibold h-12 sm:h-14 tracking-widest px-8 w-full sm:w-auto border-brand-orange/60 text-brand-orange hover:text-brand-orange hover:border-brand-orange hover:shadow-[0_0_15px_rgba(255,69,0,0.15)]"
             >
               ORDER AHEAD
             </Button>
@@ -101,7 +101,7 @@ export const Hero: React.FC = () => {
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 className="space-y-1"
               >
-                <span className="block font-mono text-[9px] sm:text-[10px] text-brand-muted tracking-widest uppercase">
+                <span className="block font-mono text-[9px] sm:text-xs font-semibold tracking-wider text-brand-muted tracking-widest uppercase">
                   {stat.label}
                 </span>
                 <span className="block font-display text-xl sm:text-2xl font-extrabold text-white">
@@ -142,7 +142,7 @@ export const Hero: React.FC = () => {
               <div className="absolute bottom-4 left-4 right-4 bg-black/90 backdrop-blur-md p-3 sm:p-4 border border-brand-border flex items-center justify-between">
                 <div className="space-y-0.5 text-left">
                   <span className="block text-[8px] sm:text-[9px] font-mono text-brand-accent font-black tracking-widest uppercase">STREET POPULAR SKU</span>
-                  <span className="block text-xs sm:text-sm font-display font-black text-white uppercase">Tokyo Charcoal Wagyu</span>
+                  <span className="block text-base font-semibold font-display font-black text-white uppercase">Tokyo Charcoal Wagyu</span>
                 </div>
                 <div className="w-9 h-9 rounded-full bg-brand-accent/5 border border-brand-accent/20 flex flex-shrink-0 items-center justify-center text-brand-accent text-xs font-mono font-bold">
                   $18.5
@@ -164,7 +164,7 @@ export const Hero: React.FC = () => {
       <div className="w-screen bg-brand-accent py-4 mt-16 sm:mt-24 relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] overflow-hidden select-none border-y-2 border-black rotate-[-1deg] scale-[1.02]">
         <div className="whitespace-nowrap flex animate-[marquee_20s_linear_infinite] gap-10">
           {[...Array(4)].map((_, containerIdx) => (
-            <div key={containerIdx} className="flex gap-10 font-mono text-xs sm:text-sm font-black text-black uppercase tracking-widest py-1">
+            <div key={containerIdx} className="flex gap-10 font-mono text-base font-semibold font-black text-black uppercase tracking-widest py-1">
               <span>★ SMASHED BRISKET PERFECTED</span>
               <span>★ ZERO COMPROMISES ONLY HEAVY BASS</span>
               <span>★ 18-HOUR SLOW SMOKE WAGYU TACOS</span>

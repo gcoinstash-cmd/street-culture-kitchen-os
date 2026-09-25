@@ -127,14 +127,14 @@ export const FloatingPlatter: React.FC = () => {
                     </div>
                     <div className="space-y-1">
                       <span className="block text-xs font-bold text-white uppercase">// SYSTEM EMPTY</span>
-                      <p className="text-[10px] text-brand-muted max-w-xs font-sans leading-relaxed">
+                      <p className="text-xs font-semibold tracking-wider text-brand-muted max-w-xs font-sans leading-relaxed">
                         No food units committed to local grid. Access Flavor Index below to secure culinary modules.
                       </p>
                     </div>
                   </div>
                 ) : (
                   <div className="space-y-4">
-                    <div className="flex justify-between text-[10px] text-brand-muted border-b border-brand-border/40 pb-2 uppercase">
+                    <div className="flex justify-between text-xs font-semibold tracking-wider text-brand-muted border-b border-brand-border/40 pb-2 uppercase">
                       <span>LOADOUT INDEX ({totalItemsCount} SECS)</span>
                       <span>COMPOSITION PRICE</span>
                     </div>
@@ -236,7 +236,7 @@ export const FloatingPlatter: React.FC = () => {
                     <div className="border-t border-brand-border/40 my-2" />
                     
                     <div className="flex justify-between items-baseline pt-1">
-                      <span className="font-black text-white text-[10px] tracking-wider uppercase">// PLATTER MATRIX TOTAL:</span>
+                      <span className="font-black text-white text-xs font-semibold tracking-wider tracking-wider uppercase">// PLATTER MATRIX TOTAL:</span>
                       <span className="font-display text-2xl font-black text-[#CCFF00] tracking-tight">
                         ${totalPrice.toFixed(2)}
                       </span>

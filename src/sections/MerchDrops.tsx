@@ -140,14 +140,14 @@ export const MerchDrops: React.FC = () => {
                     </span>
                   </div>
 
-                  <div className="absolute bottom-3 right-3 bg-black/85 text-[10px] font-mono font-bold text-white px-2 py-0.5 border border-brand-border rounded-sm">
+                  <div className="absolute bottom-3 right-3 bg-black/85 text-xs font-semibold tracking-wider font-mono font-bold text-white px-2 py-0.5 border border-brand-border rounded-sm">
                     ${item.price.toFixed(2)}
                   </div>
                 </div>
 
                 {/* Info and Titles */}
                 <div className="space-y-2">
-                  <span className="text-[10px] font-mono text-brand-muted tracking-widest uppercase block">// CATALOG ITEM // SEC-0{idx+1}</span>
+                  <span className="text-xs font-semibold tracking-wider font-mono text-brand-muted tracking-widest uppercase block">// CATALOG ITEM // SEC-0{idx+1}</span>
                   <h3 className="font-display text-xl font-extrabold text-white uppercase">
                     {item.name}
                   </h3>
@@ -162,7 +162,7 @@ export const MerchDrops: React.FC = () => {
                   
                   <div className="space-y-1.5">
                     {Object.entries(item.techSpecs).map(([key, value]) => (
-                      <div key={key} className="flex justify-between items-center text-[11px] font-mono">
+                      <div key={key} className="flex justify-between items-center text-xs font-semibold font-mono">
                         <span className="text-brand-muted uppercase">{key}:</span>
                         <span className="text-white font-bold">{value}</span>
                       </div>
@@ -233,7 +233,7 @@ export const MerchDrops: React.FC = () => {
                 
                 {/* Header */}
                 <div className="space-y-1">
-                  <span className="font-mono text-[10px] text-brand-orange tracking-widest uppercase font-black block">
+                  <span className="font-mono text-xs font-semibold tracking-wider text-brand-orange tracking-widest uppercase font-black block">
                     // UNDERGROUND DISTRIBUTION CHANNELS
                   </span>
                   <h3 className="font-display text-2xl font-black text-white uppercase tracking-tight">
@@ -278,7 +278,7 @@ export const MerchDrops: React.FC = () => {
 
                 {/* Quantity selector */}
                 <div className="flex items-center justify-between py-3 border-y border-brand-border/60">
-                  <span className="font-mono text-[10px] text-brand-muted uppercase font-bold">QUANTITY MODULE:</span>
+                  <span className="font-mono text-xs font-semibold tracking-wider text-brand-muted uppercase font-bold">QUANTITY MODULE:</span>
                   <div className="flex items-center gap-3">
                     <button
                       onClick={() => setQuantity(Math.max(1, quantity - 1))}
@@ -298,7 +298,7 @@ export const MerchDrops: React.FC = () => {
 
                 {/* Interactive Dynamic Sum Estimation */}
                 <div className="flex items-center justify-between">
-                  <span className="font-mono text-[10px] text-brand-muted uppercase font-bold">COMMITMENT TOTAL:</span>
+                  <span className="font-mono text-xs font-semibold tracking-wider text-brand-muted uppercase font-bold">COMMITMENT TOTAL:</span>
                   <span className="font-display text-2xl font-black text-brand-accent">
                     ${(selectedItem.price * quantity).toFixed(2)}
                   </span>
@@ -314,7 +314,7 @@ export const MerchDrops: React.FC = () => {
                     <ShoppingBag className="w-4 h-4 text-white" /> COMMIT CONTRACT NOW
                   </Button>
                   
-                  <div className="flex items-center justify-center gap-2 text-[10px] text-brand-muted font-mono uppercase text-center w-full">
+                  <div className="flex items-center justify-center gap-2 text-xs font-semibold tracking-wider text-brand-muted font-mono uppercase text-center w-full">
                     <ShieldCheck className="w-4 h-4 text-brand-orange flex-shrink-0" />
                     <span>Allocated run security verified. Batch shipments arrive within 14 Earth days.</span>
                   </div>

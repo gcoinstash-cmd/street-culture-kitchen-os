@@ -72,7 +72,7 @@ export const Catering: React.FC = () => {
                       
                       <div className="pt-2 border-t border-brand-border/60 w-full text-right flex items-center justify-end gap-1.5 text-brand-accent">
                         <Users className="w-3.5 h-3.5" />
-                        <span className="text-[10px] font-bold">MIN {pkg.minGuests} PAX</span>
+                        <span className="text-xs font-semibold tracking-wider font-bold">MIN {pkg.minGuests} PAX</span>
                       </div>
                     </div>
                   </div>

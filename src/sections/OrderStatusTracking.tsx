@@ -184,12 +184,12 @@ export const OrderStatusTracking: React.FC = () => {
               <h2 className="font-display text-3xl sm:text-5xl font-black text-white uppercase tracking-tight">
                 TACTICAL ORDER TELEMETRY
               </h2>
-              <span className="block font-mono text-[11px] text-brand-muted uppercase tracking-wider">
+              <span className="block font-mono text-xs font-semibold text-brand-muted uppercase tracking-wider">
                 (Real-Time Tracking)
               </span>
             </div>
           </div>
-          <p className="max-w-md text-xs sm:text-sm text-brand-muted font-sans leading-relaxed text-left md:text-right">
+          <p className="max-w-md text-base font-semibold text-brand-muted font-sans leading-relaxed text-left md:text-right">
             Tap a preset courier ID or type a tracking key to lock into real-time kitchen status feeds and monitor dispatch intercepts.
           </p>
         </div>
@@ -201,7 +201,7 @@ export const OrderStatusTracking: React.FC = () => {
             <Card glowColor="orange" className="flex-1 flex flex-col justify-between p-6 sm:p-8 border border-brand-border bg-brand-card relative">
               
               <div className="space-y-6 text-left">
-                <span className="font-mono text-[10px] text-brand-orange tracking-widest uppercase block font-black">
+                <span className="font-mono text-xs font-semibold tracking-wider text-brand-orange tracking-widest uppercase block font-black">
                   // TELEMETRY GATEWAY ID
                 </span>
                 
@@ -209,7 +209,7 @@ export const OrderStatusTracking: React.FC = () => {
                   INITIATE SECURE LINK
                 </h3>
 
-                <p className="text-xs sm:text-sm text-brand-muted font-sans leading-relaxed">
+                <p className="text-base font-semibold text-brand-muted font-sans leading-relaxed">
                   Type a custom tracking signature code key, or engage one of our pre-existing telemetry signals from active courier runs down below.
                 </p>
 
@@ -220,7 +220,7 @@ export const OrderStatusTracking: React.FC = () => {
                     <input
                       id="trackingIdInput"
                       type="text"
-                      className="w-full bg-[#080809] border border-brand-border font-mono text-sm px-4 py-3.5 pr-12 text-white placeholder-brand-muted focus:border-brand-accent focus:outline-none focus:ring-1 focus:ring-brand-accent uppercase letter-spacing-1.5 transition-all"
+                      className="w-full bg-[#080809] border border-brand-border font-mono text-base min-h-[44px] px-4 py-3.5 pr-12 text-white placeholder-brand-muted focus:border-brand-accent focus:outline-none focus:ring-1 focus:ring-brand-accent uppercase letter-spacing-1.5 transition-all"
                       placeholder="e.g. TX-PSTR-02"
                       value={typedId}
                       onChange={(e) => setTypedId(e.target.value)}
@@ -246,7 +246,7 @@ export const OrderStatusTracking: React.FC = () => {
 
                 {/* Preset List */}
                 <div className="pt-6 border-t border-brand-border/60 space-y-3">
-                  <span className="block font-mono text-[10px] text-brand-muted tracking-widest uppercase font-bold">
+                  <span className="block font-mono text-xs font-semibold tracking-wider text-brand-muted tracking-widest uppercase font-bold">
                     ACTIVE TELEMETRY PRESETS
                   </span>
                   
@@ -265,11 +265,11 @@ export const OrderStatusTracking: React.FC = () => {
                           }`}
                         >
                           <div className="flex flex-col gap-0.5">
-                            <span className="font-black text-[11px] tracking-wider text-white">ID: {p.id}</span>
+                            <span className="font-black text-xs font-semibold tracking-wider text-white">ID: {p.id}</span>
                             <span className="text-[9px] text-brand-muted uppercase font-bold">{p.name} // {p.type}</span>
                           </div>
                           
-                          <div className="flex items-center gap-1 text-[10px] font-bold">
+                          <div className="flex items-center gap-1 text-xs font-semibold tracking-wider font-bold">
                             {isActive ? (
                               <span className="flex h-2 w-2 relative">
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-accent opacity-75"></span>
@@ -289,12 +289,12 @@ export const OrderStatusTracking: React.FC = () => {
               {/* Console Reset */}
               {isStarted && (
                 <div className="pt-6 mt-6 border-t border-brand-border flex items-center justify-between">
-                  <span className="font-mono text-[10px] text-brand-muted">
+                  <span className="font-mono text-xs font-semibold tracking-wider text-brand-muted">
                     LINK STABLE // ENCRYPTED AES
                   </span>
                   <button
                     onClick={handleReset}
-                    className="font-mono text-[10px] text-brand-orange hover:text-white transition-colors flex items-center gap-1 select-none font-bold cursor-pointer"
+                    className="font-mono text-base font-semibold min-h-[44px] font-semibold tracking-wider text-brand-orange hover:text-white transition-colors flex items-center gap-1 select-none font-bold cursor-pointer"
                   >
                     <RotateCcw className="w-3.5 h-3.5" />
                     TERMINATE CONNECTION
@@ -328,7 +328,7 @@ export const OrderStatusTracking: React.FC = () => {
                     )}
                   </span>
                   
-                  <div className="font-mono text-[11px] font-black text-left">
+                  <div className="font-mono text-xs font-semibold font-black text-left">
                     <span className="text-brand-muted">CON-TTY :: </span>
                     <span className="text-white uppercase font-bold">
                       {isStarted ? `PORT_ACTIVE // KEY: ${activeId}` : "STATUS_LISTEN // IDLE"}
@@ -354,7 +354,7 @@ export const OrderStatusTracking: React.FC = () => {
                         </>
                       )}
                     </button>
-                    <span className="font-mono text-[10px] text-brand-muted bg-brand-bg px-2 py-0.5 border border-brand-border/40 font-bold">
+                    <span className="font-mono text-xs font-semibold tracking-wider text-brand-muted bg-brand-bg px-2 py-0.5 border border-brand-border/40 font-bold">
                       STEP {currentStep + 1}/{TRACKING_STEPS.length}
                     </span>
                   </div>
@@ -463,7 +463,7 @@ export const OrderStatusTracking: React.FC = () => {
                                 )}
                               </div>
 
-                              <span className="text-[10px] font-mono text-brand-muted block font-semibold leading-none uppercase">
+                              <span className="text-xs font-semibold tracking-wider font-mono text-brand-muted block font-semibold leading-none uppercase">
                                 {step.subtitle}
                               </span>
 
@@ -471,7 +471,7 @@ export const OrderStatusTracking: React.FC = () => {
                                 <motion.p 
                                   initial={{ opacity: 0, height: 0 }}
                                   animate={{ opacity: 1, height: "auto" }}
-                                  className="text-[11px] sm:text-xs text-brand-text/80 font-sans leading-relaxed pt-1 max-w-lg"
+                                  className="text-xs font-semibold sm:text-xs text-brand-text/80 font-sans leading-relaxed pt-1 max-w-lg"
                                 >
                                   {step.details}
                                 </motion.p>
@@ -494,7 +494,7 @@ export const OrderStatusTracking: React.FC = () => {
 
                       <div 
                         ref={logContainerRef}
-                        className="bg-[#080809] border border-brand-border/50 h-28 p-3 overflow-y-auto font-mono text-[10px] text-brand-accent/90 space-y-1 select-text scrollbar-thin scrollbar-thumb-brand-border"
+                        className="bg-[#080809] border border-brand-border/50 h-28 p-3 overflow-y-auto font-mono text-xs font-semibold tracking-wider text-brand-accent/90 space-y-1 select-text scrollbar-thin scrollbar-thumb-brand-border"
                       >
                         {logs.map((log, index) => {
                           const isError = log.includes("Error") || log.includes("ALERT") || log.includes("WARNING");

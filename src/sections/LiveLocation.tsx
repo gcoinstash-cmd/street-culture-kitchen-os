@@ -36,7 +36,7 @@ export const LiveLocation: React.FC = () => {
               LIVE LOCATION LOGGER
             </h2>
           </div>
-          <p className="max-w-md text-xs sm:text-sm text-brand-muted font-sans leading-relaxed text-left md:text-right">
+          <p className="max-w-md text-base font-semibold text-brand-muted font-sans leading-relaxed text-left md:text-right">
             We move with the night. Check our active server stop for tonight or map out the remainder of your weekend culinary run.
           </p>
         </div>
@@ -70,18 +70,18 @@ export const LiveLocation: React.FC = () => {
                     <h3 className="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight uppercase">
                       IN THE RESEARCH LAB
                     </h3>
-                    <p className="text-xs sm:text-sm text-brand-muted font-sans leading-relaxed">
+                    <p className="text-base font-semibold text-brand-muted font-sans leading-relaxed">
                       Today is <span className="text-brand-accent font-bold font-mono">{todayDayName}</span>. 
                       Our mobile kitchen truck is currently docked at our test prep depot brining fresh wagyu bricks, hand-pressing next batches of activated charcoal flour, and mixing cyber marinades.
                     </p>
-                    <div className="p-4 bg-brand-bg/50 border border-brand-border rounded-sm font-mono text-[11px] text-brand-orange flex items-center gap-2">
+                    <div className="p-4 bg-brand-bg/50 border border-brand-border rounded-sm font-mono text-xs font-semibold text-brand-orange flex items-center gap-2">
                       <Flame className="w-4 h-4 animate-bounce" />
                       <span>NEXT DISPATCH ENGAGES THURSDAY 18:00 SHARP.</span>
                     </div>
                   </div>
                 ) : (
                   <div className="space-y-4">
-                    <div className="inline-block px-3 py-1 bg-brand-accent/10 border border-brand-accent/40 text-brand-accent font-mono text-[10px] tracking-wider uppercase font-bold">
+                    <div className="inline-block px-3 py-1 bg-brand-accent/10 border border-brand-accent/40 text-brand-accent font-mono text-xs font-semibold tracking-wider tracking-wider uppercase font-bold">
                       {featuredStop.day} // OPERATIONAL
                     </div>
                     <h3 className="font-display text-3xl sm:text-4xl font-black text-white uppercase tracking-tight leading-none">
@@ -103,7 +103,7 @@ export const LiveLocation: React.FC = () => {
 
                 {/* Highlight Next Stop block */}
                 <div className="pt-6 border-t border-brand-border space-y-3">
-                  <span className="block font-mono text-[10px] text-brand-muted tracking-widest uppercase">
+                  <span className="block font-mono text-xs font-semibold tracking-wider text-brand-muted tracking-widest uppercase">
                     FEATURED NAVIGATION COORDINATES
                   </span>
                   <div className="font-mono text-xs text-brand-text/90 space-y-1">
@@ -138,7 +138,7 @@ export const LiveLocation: React.FC = () => {
               <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(204,255,0,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(204,255,0,0.02)_1px,transparent_1px)] bg-[size:2rem_2rem] pointer-events-none" />
 
               <div className="space-y-1 z-10 text-left">
-                <span className="font-mono text-[10px] text-brand-accent uppercase font-bold tracking-widest block">// DIGITALIZED LOCATION RADAR</span>
+                <span className="font-mono text-xs font-semibold tracking-wider text-brand-accent uppercase font-bold tracking-widest block">// DIGITALIZED LOCATION RADAR</span>
                 <h4 className="font-display text-lg font-black text-white uppercase">STREET RADAR INTERCEPT</h4>
               </div>
 
@@ -219,7 +219,7 @@ export const LiveLocation: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="pt-3 border-t border-brand-border/60 flex items-center justify-between font-mono text-[10px]">
+                  <div className="pt-3 border-t border-brand-border/60 flex items-center justify-between font-mono text-xs font-semibold tracking-wider">
                     <span className="text-brand-accent font-medium">{item.timeRange}</span>
                     <button 
                       onClick={() => window.open(item.googleMapsLink, "_blank", "noopener,noreferrer")}

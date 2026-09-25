@@ -32,7 +32,7 @@ export const BrandStory: React.FC = () => {
         {/* Left Side: Brand Pillars */}
         <div className="lg:col-span-5 space-y-6">
           <span className="font-mono text-xs text-brand-orange tracking-widest uppercase font-bold flex items-center flex-wrap gap-1.5">
-            <span className="w-1.5 h-1.5 bg-brand-orange inline-block" /> THE CONCRETE MANIFESTO <span className="text-brand-muted/70 font-sans normal-case font-normal text-[11px] tracking-normal">(Our Story)</span>
+            <span className="w-1.5 h-1.5 bg-brand-orange inline-block" /> THE CONCRETE MANIFESTO <span className="text-brand-muted/70 font-sans normal-case font-normal text-xs font-semibold tracking-normal">(Our Story)</span>
           </span>
           
           <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight uppercase">
@@ -82,7 +82,7 @@ export const BrandStory: React.FC = () => {
               </div>
             </div>
             
-            <div className="font-mono text-[10px] text-brand-muted flex justify-between items-center pt-2">
+            <div className="font-mono text-xs font-semibold tracking-wider text-brand-muted flex justify-between items-center pt-2">
               <span>EST. MMXXV // DIST.4</span>
               <span className="text-brand-accent font-bold">● ONLINE SECTOR</span>
             </div>

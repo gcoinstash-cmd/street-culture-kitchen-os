@@ -74,7 +74,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
             <div>
               <div className="flex items-center gap-2">
                 <h3 className="font-mono text-base tracking-wider font-bold text-white">STREET CULTURE KITCHEN // COMMAND OS</h3>
-                <span className="text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded bg-brand-accent/20 text-brand-accent border border-brand-accent/30 font-mono">
+                <span className="text-xs font-semibold tracking-wider uppercase font-bold tracking-widest px-2 py-0.5 rounded bg-brand-accent/20 text-brand-accent border border-brand-accent/30 font-mono">
                   Fleet Dispatch
                 </span>
               </div>
@@ -117,14 +117,14 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               <div className="flex flex-col gap-2">
                 <button
                   type="submit"
-                  className="w-full py-3 bg-brand-accent hover:opacity-90 text-black font-black rounded-xl shadow-lg transition-all text-xs tracking-widest uppercase font-mono"
+                  className="w-full py-3 bg-brand-accent hover:opacity-90 text-black font-black rounded-xl shadow-lg transition-all text-base font-semibold min-h-[44px] tracking-widest uppercase font-mono"
                 >
                   Verify Access
                 </button>
                 <button
                   type="button"
                   onClick={handleOneClickFill}
-                  className="w-full py-2.5 bg-stone-900 hover:bg-stone-800 border border-stone-700 text-stone-300 font-bold rounded-xl transition-all text-xs tracking-wider flex items-center justify-center gap-2"
+                  className="w-full py-2.5 bg-stone-900 hover:bg-stone-800 border border-stone-700 text-stone-300 font-bold rounded-xl transition-all text-base font-semibold min-h-[44px] tracking-wider flex items-center justify-center gap-2"
                 >
                   <Sparkles className="w-4 h-4 text-brand-accent" />
                   Auto-Fill 1-Click Passkey (street2026)
@@ -161,7 +161,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                 })}
               </div>
               <div className="flex items-center gap-4">
-                <span className="text-[11px] text-stone-400 font-mono flex items-center gap-1.5">
+                <span className="text-xs font-semibold text-stone-400 font-mono flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                   FLEET LIVE: 2 UNITS
                 </span>
@@ -180,24 +180,24 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               {/* Metric Strip */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="p-4 bg-stone-900/50 border border-stone-800 rounded-xl">
-                  <span className="text-[10px] text-stone-400 uppercase tracking-widest block mb-1">Today's Fleet Gross</span>
+                  <span className="text-xs font-semibold tracking-wider text-stone-400 uppercase tracking-widest block mb-1">Today's Fleet Gross</span>
                   <span className="text-xl font-bold font-mono text-stone-100">$9,840.00</span>
-                  <span className="text-[10px] text-emerald-400 block mt-1">+26% vs Target</span>
+                  <span className="text-xs font-semibold tracking-wider text-emerald-400 block mt-1">+26% vs Target</span>
                 </div>
                 <div className="p-4 bg-stone-900/50 border border-stone-800 rounded-xl">
-                  <span className="text-[10px] text-stone-400 uppercase tracking-widest block mb-1">Total Bao & Tacos Sold</span>
+                  <span className="text-xs font-semibold tracking-wider text-stone-400 uppercase tracking-widest block mb-1">Total Bao & Tacos Sold</span>
                   <span className="text-xl font-bold font-mono text-stone-100">842 Portions</span>
-                  <span className="text-[10px] text-brand-accent block mt-1">Arts District Lead</span>
+                  <span className="text-xs font-semibold tracking-wider text-brand-accent block mt-1">Arts District Lead</span>
                 </div>
                 <div className="p-4 bg-stone-900/50 border border-stone-800 rounded-xl">
-                  <span className="text-[10px] text-stone-400 uppercase tracking-widest block mb-1">Avg Ticket Turnaround</span>
+                  <span className="text-xs font-semibold tracking-wider text-stone-400 uppercase tracking-widest block mb-1">Avg Ticket Turnaround</span>
                   <span className="text-xl font-bold font-mono text-stone-100">7.2 Mins</span>
-                  <span className="text-[10px] text-emerald-400 block mt-1">Blazing Speed</span>
+                  <span className="text-xs font-semibold tracking-wider text-emerald-400 block mt-1">Blazing Speed</span>
                 </div>
                 <div className="p-4 bg-stone-900/50 border border-stone-800 rounded-xl">
-                  <span className="text-[10px] text-stone-400 uppercase tracking-widest block mb-1">Merch Drop Sell-Through</span>
+                  <span className="text-xs font-semibold tracking-wider text-stone-400 uppercase tracking-widest block mb-1">Merch Drop Sell-Through</span>
                   <span className="text-xl font-bold font-mono text-stone-100">78%</span>
-                  <span className="text-[10px] text-brand-accent block mt-1">Hoodie Sold Out Soon</span>
+                  <span className="text-xs font-semibold tracking-wider text-brand-accent block mt-1">Hoodie Sold Out Soon</span>
                 </div>
               </div>
 
@@ -243,7 +243,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                         <div className="text-xs font-bold text-stone-100">{d.drop}</div>
                         <div className="text-xs text-brand-accent font-mono">Remaining: {d.stock}</div>
                         <div className="text-xs text-stone-400">Price: {d.price}</div>
-                        <div className="pt-2 border-t border-stone-800 text-[11px] text-emerald-400">{d.status}</div>
+                        <div className="pt-2 border-t border-stone-800 text-xs font-semibold text-emerald-400">{d.status}</div>
                       </div>
                     ))}
                   </div>
@@ -270,7 +270,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
                         </div>
                         <div className="flex items-center gap-4">
                           <span className="font-mono text-xs font-bold text-stone-100">{ord.total}</span>
-                          <span className="text-[10px] font-bold px-2 py-1 rounded bg-amber-500/10 text-amber-300 border border-amber-500/20 font-mono">
+                          <span className="text-xs font-semibold tracking-wider font-bold px-2 py-1 rounded bg-amber-500/10 text-amber-300 border border-amber-500/20 font-mono">
                             {ord.status}
                           </span>
                         </div>
@@ -286,7 +286,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({ isOpen, onCl
               <span className="font-mono">Turnkey Supabase Schema Ready • RLS Active</span>
               <button
                 onClick={onClose}
-                className="px-4 py-1.5 bg-stone-800 hover:bg-stone-700 text-stone-200 font-bold rounded-lg transition-colors text-xs"
+                className="px-4 py-1.5 bg-stone-800 hover:bg-stone-700 text-stone-200 font-bold rounded-lg transition-colors text-base font-semibold min-h-[44px]"
               >
                 Close Terminal
               </button>
